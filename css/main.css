@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}body{
+    background-color: #F0F2F9;
 }
 #header{
     position: relative;
+    background-color: #53dd6c;
 }
 header{
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,20 +27,56 @@ header{
 }
 .logo{
     font-size: 30px;
-    font-family: monospace;
+    font-family: 'Lobster', cursive;
 }
-.action-call button{
+/* .action-call button{
     padding: 10px 20px;
     background: none;
     border: 2px solid black;
     font-size: 18px;
     text-transform: capitalize;
     border-radius: 20px;
+} */
+.switch{
+    position: relative;
+    width: 50px;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #F0F2F9;
+    border-radius: 34px;
+    transition: .4s;
+}
+.switch input{display: none;}
+.slider::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    background-color: #53dd6c;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+input:checked + .slider{
+    background-color: dodgerblue;
+}
+input:checked + .slider::before{
+    transform: translateX(20px);
 }
 .navigation{
     position: absolute;
     top: 0;
-    background-color: dodgerblue;
+    background-color: #53dd6c;
     width: 250px;
     height: 100vh;
     left: -250px;
@@ -57,4 +97,10 @@ header{
 .navigation a{
     text-decoration: none;
     color: white;
+}
+.social-media-links{
+    position: fixed;
+    top: 200px;
+    transform: rotate(90deg);
+    left: 30px;
 }
