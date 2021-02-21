@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     background: url('/img/pexels-elvis-2528118.jpg');
@@ -31,6 +31,8 @@ h3{
 h1{
     line-height: 40px;
     text-align: center;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
 }
 button{
     background: none;
