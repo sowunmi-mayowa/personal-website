@@ -4,6 +4,7 @@ const userName = document.querySelector("#username");
 const userEmail = document.querySelector("#useremail");
 const comment = document.querySelector("#comment");
 const contactForm = document.querySelector("form");
+const toggleBtn = document.querySelector(".action-call");
 
 menuBtn.addEventListener("click", showNav);
 
@@ -36,5 +37,24 @@ function validateForm(e) {
             errorMsg.remove()
         }, 3000);
     }
+    else{
+        let errorMsg = document.createElement('div');
+        errorMsg.textContent = "thank you, response received successfully";
+        errorMsg.classList.add("success")
+        document.querySelector(".msgelem").appendChild(errorMsg);
+
+        setTimeout(() => {
+            errorMsg.remove()
+        }, 3000);
+    }
     borderDanger();
 }
+
+// toggleBtn.addEventListener('click', toggleTheme);
+
+//  function toggleTheme(e) {
+//      e.preventDefault();
+
+//      document.querySelector("body").classList.add("body-dark")
+//      document.querySelector("#header").classList.add("header-dark")
+//  }

@@ -9,6 +9,7 @@ html{
 }
 body{
     background-color: #F0F2F9;
+    transition: all 0.5s ease-in-out;
 }
 #header{
     position: sticky;
@@ -109,10 +110,11 @@ input:checked + .slider::before{
 }
 .social-media-links{
     position: fixed;
-    top: 200px;
+    top: 400px;
     transform: rotate(90deg);
-    left: 30px;
+    left: -80px;
 }
+.social-media-links i{color: #53dd6c;}
 .container{
     margin: 0px 40px;
 }
@@ -291,6 +293,16 @@ form h3{
     text-transform: capitalize;
     font-size: 16px;
     padding: 10px;
+}
+.success{
+    width: 80%;
+    text-align: center;
+    font-weight: 700;
+    background-color: #53dd6c;
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 10px; 
 }
 #hire-me{
     background-color: white;

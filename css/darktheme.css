@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.body-dark{
+    background-color: rgb(31 36 41);
+}
+.header-dark{
+    background-color: #343a40;
+}
