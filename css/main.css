@@ -341,44 +341,11 @@ form h3{
     color: white;
     background-color: #53dd6c;
 }
-.testimonials{
-    overflow: hidden;
-    border-radius: 20px;
-    background-color: white;
-    border: 2px solid #53dd6c;
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.testimonial-card-img{
-    max-width: 100%;
-}
-.testimonial-card-img img{
-    border-radius: 100%;
-    width: 100%;
-    height: 100%;
-}
-.sec{
-    margin: 0px 20px;
-}
-.testimonial-card-content{
-    padding:  20px;
-}
-.testimonial-card-content h4{
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
-    text-align: center;
-    color: #53dd6c;
-}
-.testimonial-card-content  p{
-    margin: 10px 0px;
-}
-.testimonial-card-content button{
-    padding: 10px 15px;
-    background: none;
-    border: 2px solid #53dd6c;
-    color: #53dd6c;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.testimonial-card-content button:hover{
-    color: white;
-    background-color: #53dd6c;
+.testimonial-container {
+    display: flex;
 }
