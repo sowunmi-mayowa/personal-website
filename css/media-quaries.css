@@ -3,6 +3,10 @@
         padding: 10px;
         justify-content: space-around;
     }
+    .social-media-links{
+        top: 300px;
+        left: -30px;
+    }
     .action-call{
         display: none;
     }
@@ -13,6 +17,40 @@
         height: 60vh;
     }
     #landing-content{
+        flex-direction: column-reverse;
+    }
+    .container{
+        margin: 0 10px;
+    }
+    .content{
+        padding: 10px;
+        margin-right: 0;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 20px;
+    }
+    .content button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .project-cards{
         flex-direction: column;
+    }
+    .sec{
+        margin: 20px 0px;
+    }
+    .show-more button{
+        padding: 10px 15px;
+        font-size: small;
+    }
+    .contact-me{
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 10px;
     }
 }

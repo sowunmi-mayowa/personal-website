@@ -50,11 +50,11 @@ function validateForm(e) {
     borderDanger();
 }
 
-// toggleBtn.addEventListener('click', toggleTheme);
+toggleBtn.addEventListener('change', toggleTheme);
 
-//  function toggleTheme(e) {
-//      e.preventDefault();
+ function toggleTheme(e) {
+     e.preventDefault();
 
-//      document.querySelector("body").classList.add("body-dark")
-//      document.querySelector("#header").classList.add("header-dark")
-//  }
+     document.querySelector("body").classList.add("body-dark")
+     document.querySelector("#header").classList.add("header-dark")
+ }
