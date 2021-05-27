@@ -13,6 +13,9 @@
     .navigation{
         width: 200px;
     }
+    .action-call-sm{
+        display: block;
+    }
     .navigation ul {
         height: 60vh;
     }

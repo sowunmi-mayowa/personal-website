@@ -5,8 +5,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 .body-dark{
-    background-color: rgb(31 36 41);
+    background-color: #121212;
 }
 .header-dark{
-    background-color: #343a40;
+    background-color: #1F1F1F !important;
+    color: #AAAAAA !important;
+    box-shadow: -2px 3px 6px 1px black;
+}
+.slider-dark{
+    background-color: #121212 !important;
+    box-shadow: 0px 1px 2px 1px black;
+}
+.navigation-dark{
+    background-color: #121212 !important;
 }

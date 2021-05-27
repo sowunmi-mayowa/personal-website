@@ -15,9 +15,9 @@ body{
     position: sticky;
     top: 0;
     background-color: #4070F4;
+    color: white;
 }
 header{
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,18 +43,18 @@ header{
     text-transform: capitalize;
     border-radius: 20px;
 } */
-.action-call{
+.navigation ul .action-call, .action-call{
     display: flex;
     align-items: center;
 }
-.switch{
+.navigation ul .action-call, .switch{
     position: relative;
     width: 50px;
     display: inline-block;
     height: 30px;
     margin: 0 10px;
 }
-.slider{
+.navigation ul .action-call, .slider{
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -77,9 +77,9 @@ header{
     transition: 0.4s;
     border-radius: 50px;
 }
-input:checked + .slider{
+/* input:checked + .slider{
     background-color: white;
-}
+} */
 input:checked + .slider::before{
     transform: translateX(20px);
 }

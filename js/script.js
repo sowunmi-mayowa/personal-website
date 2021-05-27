@@ -4,7 +4,7 @@ const userName = document.querySelector("#username");
 const userEmail = document.querySelector("#useremail");
 const comment = document.querySelector("#comment");
 const contactForm = document.querySelector("form");
-const toggleBtn = document.querySelector(".action-call");
+const toggleBtn = document.querySelector("#action-btn");
 
 menuBtn.addEventListener("click", showNav);
 
@@ -50,11 +50,16 @@ function validateForm(e) {
     borderDanger();
 }
 
+
 toggleBtn.addEventListener('change', toggleTheme);
 
- function toggleTheme(e) {
-     e.preventDefault();
+function toggleTheme(e) {
+    e.preventDefault();
+    if (toggleBtn.checked = true) {
+        document.querySelector("body").classList.toggle("body-dark")
+        document.querySelector("#header").classList.toggle("header-dark")
+        document.querySelector(".slider").classList.toggle("slider-dark")
+        document.querySelector(".navigation").classList.toggle("navigation-dark")
+    }
 
-     document.querySelector("body").classList.add("body-dark")
-     document.querySelector("#header").classList.add("header-dark")
  }
