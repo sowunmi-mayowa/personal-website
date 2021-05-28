@@ -22,7 +22,7 @@ function showNav(){
 function borderDanger() {
     userName.classList.add('danger')
 }
-contactForm.addEventListener('submit', validateForm);
+//contactForm.addEventListener('submit', validateForm);
 
 // function validateForm(e) {
 //     e.preventDefault();
