@@ -19,3 +19,26 @@
 .navigation-dark{
     background-color: #121212 !important;
 }
+.landing-content-dark{
+    background-color: #1F1F1F !important;
+    color: #AAAAAA !important;
+    box-shadow: -2px 3px 6px 1px black !important;  
+}
+.content-btn-dark{
+    background-color:  #ff2aff !important;
+}
+.project-h1-dark{
+    color: #aaa !important;
+    background: #121212;
+    box-shadow: -1px 3px 7px 1px black;
+}
+.cards-dark{
+    box-shadow: -2px 3px 6px 1px black !important;
+    color: #AAAAAA !important;
+    border: none;
+    background-color: #1F1F1F !important;
+}
+.contact-me-dark{
+    background-color: #1F1F1F !important;
+    box-shadow: -2px 3px 6px 1px black !important;  
+}

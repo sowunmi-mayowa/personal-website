@@ -24,31 +24,31 @@ function borderDanger() {
 }
 contactForm.addEventListener('submit', validateForm);
 
-function validateForm(e) {
-    e.preventDefault();
+// function validateForm(e) {
+//     e.preventDefault();
 
-    if (userName.value == "" || userEmail.value == "" || comment.value == "") {
-        let errorMsg = document.createElement('div');
-        errorMsg.textContent = "all fields are required";
-        errorMsg.classList.add("error")
-        document.querySelector(".msgelem").appendChild(errorMsg);
+//     if (userName.value == "" || userEmail.value == "" || comment.value == "") {
+//         let errorMsg = document.createElement('div');
+//         errorMsg.textContent = "all fields are required";
+//         errorMsg.classList.add("error")
+//         document.querySelector(".msgelem").appendChild(errorMsg);
 
-        setTimeout(() => {
-            errorMsg.remove()
-        }, 3000);
-    }
-    else{
-        let errorMsg = document.createElement('div');
-        errorMsg.textContent = "thank you, response received successfully";
-        errorMsg.classList.add("success")
-        document.querySelector(".msgelem").appendChild(errorMsg);
+//         setTimeout(() => {
+//             errorMsg.remove()
+//         }, 3000);
+//     }
+//     else{
+//         let errorMsg = document.createElement('div');
+//         errorMsg.textContent = "thank you, response received successfully";
+//         errorMsg.classList.add("success")
+//         document.querySelector(".msgelem").appendChild(errorMsg);
 
-        setTimeout(() => {
-            errorMsg.remove()
-        }, 3000);
-    }
-    borderDanger();
-}
+//         setTimeout(() => {
+//             errorMsg.remove()
+//         }, 3000);
+//     }
+//     borderDanger();
+// }
 
 
 toggleBtn.addEventListener('change', toggleTheme);
@@ -56,10 +56,17 @@ toggleBtn.addEventListener('change', toggleTheme);
 function toggleTheme(e) {
     e.preventDefault();
     if (toggleBtn.checked = true) {
-        document.querySelector("body").classList.toggle("body-dark")
-        document.querySelector("#header").classList.toggle("header-dark")
-        document.querySelector(".slider").classList.toggle("slider-dark")
-        document.querySelector(".navigation").classList.toggle("navigation-dark")
+        document.querySelector("body").classList.toggle("body-dark");
+        document.querySelector("#header").classList.toggle("header-dark");
+        document.querySelector(".slider").classList.toggle("slider-dark");
+        document.querySelector(".navigation").classList.toggle("navigation-dark");
+        document.querySelector("#landing-content").classList.toggle("landing-content-dark");
+        document.querySelector(".content-btn").classList.toggle("content-btn-dark");
+        document.querySelector(".p-h1").classList.toggle("project-h1-dark");
+        document.querySelector(".p-first").classList.toggle("cards-dark");
+        document.querySelector(".sec").classList.toggle("cards-dark");
+        document.querySelector(".p-third").classList.toggle("cards-dark");
+        document.querySelector(".contact-me").classList.toggle("contact-me-dark");
     }
 
  }

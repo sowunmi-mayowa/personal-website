@@ -125,10 +125,11 @@ input:checked + .slider::before{
     background-color: white;
     margin-top: 20px;
     border-radius: 20px;
-    padding: 0px 20px;
+    padding: 20px;
+    BOX-SHADOW: 0px 1px 3px 4px grey;
 }
 .content{
-    margin-right:  40px;
+    margin:  0px 40px;
 }
 .content h3{
     font-family: 'Lobster', cursive;
@@ -142,13 +143,16 @@ input:checked + .slider::before{
 .content button{
     cursor: pointer;
     background: #4070F4;
-    color: #fff;
     margin-top: 15px;
     padding: 15px 30px;
     border: none;
     border-radius: 20px;
     font-size: 20px;
     text-transform: capitalize;
+}
+.content button a{
+    color: #fff;
+    text-decoration: none;
 }
 .landing-img{
     max-width: 100%;
@@ -166,6 +170,8 @@ input:checked + .slider::before{
     text-transform: capitalize;
     text-align: center;
     color: #4070F4;
+    margin-bottom: 15px;
+    padding: 5px;
 }
 .project-cards{
     display: flex;
@@ -176,7 +182,7 @@ input:checked + .slider::before{
     overflow: hidden;
     border-radius: 20px;
     background-color: white;
-    border: 2px solid #4070F4;
+    box-shadow: -2px 3px 6px 1px grey;
 }
 .card-img{
     max-width: 100%;
